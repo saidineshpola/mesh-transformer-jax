@@ -1,1 +1,1 @@
-gs::/simple-bucket-dinesh/datasets/text.tfrecords
+gs://simple-bucket-dinesh/datasets/text.tfrecords
