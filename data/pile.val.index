@@ -1,1 +1,1 @@
-gs://neo-datasets/pile_new_inputs_shuffled/val/pile_0.tfrecords
+gs://simple-bucket-dinesh/datasets/text.tfrecords
