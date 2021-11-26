@@ -1,1 +1,1 @@
-python3 device_train.py --config=configs/6B_roto_26.json --tune-model-path=gs://sample-bucket-dinesh/step_383500/
+python3 device_train.py --config=configs/6B_roto_256.json --tune-model-path=gs://sample-bucket-dinesh/step_383500/
