@@ -21,7 +21,7 @@
 
   "tpu_size": 8,
 
-  "bucket": "finetuning-6b-bucket/pola_saidinesh",
+  "bucket": "finetuning-6b-bucket/pola_saidinesh/",
   "model_dir": "mesh_jax_pile_6B_rotary",
 
   "train_set": "pile.train.index",
@@ -30,7 +30,7 @@
   ],
   "val_batches": 1,
   "val_every": 500,
-  "ckpt_every": 500,
+  "ckpt_every": 1,
   "keep_every": 10000,
 
   "name": "GPT3_6B_pile_rotary",
