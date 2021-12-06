@@ -31,7 +31,7 @@
   "val_batches": 57811,
   "val_every": 32000,
   "ckpt_every":32000 ,
-  "keep_every": 10000,
+  "keep_every": 32000,
 
   "name": "GPT3_6B_pile_rotary",
   "wandb_project": "mesh-transformer-jax",
