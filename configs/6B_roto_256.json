@@ -12,24 +12,24 @@
   "per_replica_batch": 1,
   "gradient_accumulation_steps": 16,
 
-  "warmup_steps": 3000,
-  "anneal_steps": 300000,
+  "warmup_steps": 70,
+  "anneal_steps": 430,
   "lr": 1.2e-4,
   "end_lr": 1.2e-5,
   "weight_decay": 0.1,
-  "total_steps": 100,
+  "total_steps": 500,
 
   "tpu_size": 8,
 
   "bucket": "finetuning-6b-bucket",
-  "model_dir": "mesh_jax_pile_6B_rotary",
+  "model_dir": "mesh_jax_pile_6B_rotary_",
 
   "train_set": "pile.train.index",
   "val_set": "pile.test.index",
 "eval_harness_tasks": [
   ],
-  "val_batches": 0,
-  "val_every": 500,
+  "val_batches": 57811,
+  "val_every": 100,
   "ckpt_every": 100,
   "keep_every": 100,
 
