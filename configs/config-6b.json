@@ -13,11 +13,11 @@
   "gradient_accumulation_steps": 16,
 
   "warmup_steps": 4000,
-  "anneal_steps": 31000,
+  "anneal_steps": 26000,
   "lr": 1.2e-4,
   "end_lr": 1.2e-5,
   "weight_decay": 0.1,
-  "total_steps": 35000,
+  "total_steps": 30000,
 
   "tpu_size": 8,
 
@@ -28,10 +28,10 @@
   "val_set": {"pile":"pile.val.index"},
 "eval_harness_tasks": [
   ],
-  "val_batches": 25414,
-  "val_every": 35000,
-  "ckpt_every":35000 ,
-  "keep_every": 35000,
+  "val_batches": 7598,
+  "val_every": 30000,
+  "ckpt_every":30000 ,
+  "keep_every": 30000,
 
   "name": "GPT3_6B_pile_rotary",
   "wandb_project": "mesh-transformer-jax",
