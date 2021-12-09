@@ -29,9 +29,9 @@
 "eval_harness_tasks": [
   ],
   "val_batches": 7598,
-  "val_every": 30000,
-  "ckpt_every":30000 ,
-  "keep_every": 30000,
+  "val_every": 1000,
+  "ckpt_every":1000 ,
+  "keep_every": 5000,
 
   "name": "GPT3_6B_pile_rotary",
   "wandb_project": "mesh-transformer-jax",
