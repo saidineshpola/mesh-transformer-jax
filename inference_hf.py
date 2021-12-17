@@ -22,7 +22,7 @@ if __name__=="__main__":
 
     input_text = args.input
     input_text="Write java function to sort the array"
-    input_ids = tokenizer.(str(input_text), return_tensors='pt')
+    input_ids = tokenizer.(str(input_text), return_tensors='pt').input_ids
 
     output = model.generate(
         input_ids,
