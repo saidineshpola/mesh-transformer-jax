@@ -24,12 +24,13 @@ if __name__=="__main__":
     input_text="Write java function to sort the array"
     input_ids = tokenizer.(str(input_text), return_tensors='pt').input_ids
 
-    output = model.generate(
-        input_ids,
-        do_sample=True,
-        max_length=20,
-        top_p=0.7,
-        top_k=0,
-        temperature=1.0,
-    )    
-    print(tokenizer.decode(output[0], skip_special_tokens=True))
+#     output = model.generate(
+#         input_ids,
+#         do_sample=True,
+#         max_length=20,
+#         top_p=0.7,
+#         top_k=0,
+#         temperature=1.0,
+#     )    
+    gen_tokens = model.generate(input_ids, do_sample=True, temperature=0.9, max_length=100,)
+    print(tokenizer.batch_decode(gen_tokens)[0])
