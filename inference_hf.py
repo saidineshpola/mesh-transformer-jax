@@ -21,7 +21,7 @@ if __name__=="__main__":
     args = my_parser.parse_args()
 
     input_text = args.input
-    input_ids = tokenizer.encode(str(input_text), return_tensors='pt').cuda()
+    input_ids = tokenizer.encode(str(input_text), return_tensors='pt')
 
     output = model.generate(
         input_ids,
