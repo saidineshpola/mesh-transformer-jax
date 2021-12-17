@@ -9,7 +9,7 @@ if __name__=="__main__":
     if torch.cuda.is_available():
         model =  GPTJForCausalLM.from_pretrained("./gpt-j-6B", torch_dtype=torch.float16).cuda()
     else:
-        model =  GPTJForCausalLM.from_pretrained("./gpt-j-6B", torch_dtype=torch.float16)
+        model =  GPTJForCausalLM.from_pretrained("./gpt-j-6B")
 
     # Initialize parser
     my_parser = argparse.ArgumentParser(description='List the content of a folder')
@@ -21,7 +21,6 @@ if __name__=="__main__":
     args = my_parser.parse_args()
 
     input_text = args.input
-    input_text="Write java function to sort the array"
     input_ids = tokenizer.(str(input_text), return_tensors='pt').input_ids
 
 #     output = model.generate(
