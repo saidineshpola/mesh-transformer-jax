@@ -13,7 +13,7 @@ if __name__=="__main__":
 
     # Initialize parser
     my_parser = argparse.ArgumentParser(description='List the content of a folder')
-    my_parser.add_argument('input', metavar='INPUT',
+    my_parser.add_argument('--input', metavar='INPUT',
                         type=str,
                         help='input text')
 
@@ -32,4 +32,5 @@ if __name__=="__main__":
 #         temperature=1.0,
 #     )    
     gen_tokens = model.generate(input_ids, do_sample=True, temperature=0.9, max_length=100,)
+    print("--"*50)
     print(tokenizer.batch_decode(gen_tokens)[0])
