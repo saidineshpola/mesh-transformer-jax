@@ -10,13 +10,12 @@
       5. [Zero-Shot Evaluations](#zero-shot-evaluations)
 3. [Architecture and Usage](#architecture-and-usage)
    1. [Fine-tuning](#fine-tuning)
-   2. [JAX Dependency](#jax-dependency)
+   3. [JAX Dependency](#jax-dependency)
 4. [TODO](#todo)
 
 # Mesh Transformer JAX
 
 A haiku library using the `xmap`/`pjit` operators in JAX for model parallelism of transformers.
-This Github uses dataset from this [google bucket](https://console.cloud.google.com/storage/browser/sfr-codet5-data-research?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&prefix=&forceOnObjectsSortingFiltering=false) 
 
 The parallelism scheme is similar to the [original Megatron-LM](https://arxiv.org/abs/1909.08053), which is efficient
 on TPUs due to the high speed 2d mesh network. There is also an experimental model version which implements [ZeRo style
@@ -156,6 +155,9 @@ To fine-tune the model, run `device_train.py` on a TPU VM.  Using a TPU v3-8, yo
 tokens/second, which should be sufficient for small-to-medium-size datasets.
 
 Please read the [step by step guide](howto_finetune.md) for thorough fine-tuning instructions.
+
+This Github uses dataset from this [google bucket](https://console.cloud.google.com/storage/browser/sfr-codet5-data-research?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&prefix=&forceOnObjectsSortingFiltering=false) .
+
 
 ### JAX Dependency
 
