@@ -12,7 +12,7 @@ if __name__=="__main__":
         model =  GPTJForCausalLM.from_pretrained("./gpt-j-6B")
 
     # Initialize parser
-    my_parser = argparse.ArgumentParser(description='List the content of a folder')
+    my_parser = argparse.ArgumentParser(description='Give the input text to GPT-J')
     my_parser.add_argument('--input', metavar='INPUT',
                         type=str,
                         help='input text')
@@ -21,7 +21,7 @@ if __name__=="__main__":
     args = my_parser.parse_args()
 
     input_text = args.input
-    input_ids = tokenizer.(str(input_text), return_tensors='pt').input_ids
+    input_ids = tokenizer(str(input_text), return_tensors='pt').input_ids
 
 #     output = model.generate(
 #         input_ids,
