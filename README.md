@@ -16,6 +16,7 @@
 # Mesh Transformer JAX
 
 A haiku library using the `xmap`/`pjit` operators in JAX for model parallelism of transformers.
+This Github uses dataset from this [google bucket](https://console.cloud.google.com/storage/browser/sfr-codet5-data-research?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&prefix=&forceOnObjectsSortingFiltering=false) 
 
 The parallelism scheme is similar to the [original Megatron-LM](https://arxiv.org/abs/1909.08053), which is efficient
 on TPUs due to the high speed 2d mesh network. There is also an experimental model version which implements [ZeRo style
